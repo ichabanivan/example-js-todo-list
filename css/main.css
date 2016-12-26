@@ -1,0 +1,83 @@
+.m-b-20{
+  margin-bottom: 20px;
+}
+.m-t-20{
+    margin-top: 20px;
+}
+h1{
+  text-align: center;
+}
+.m-l-r10{
+   margin-left: 10px;
+    margin-right: 10px;
+}
+.m-l-20{
+    margin-left: 20px;
+}
+.t-center{
+   text-align: center;
+}
+
+.displ-n{
+   display: none;
+}
+
+.list-group .description{
+    display: none;
+    min-height: auto;
+}
+
+/*.alert{*/
+  /*height: 45px;*/
+/*}*/
+
+.panel{
+  margin-top: 20px;
+}
+
+.list-group-item {
+  border-radius: 0;
+  margin-top: 20px;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  border-bottom-color: #ddd;
+}
+.list-group {
+  box-shadow:none;
+}
+.list-group .description {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+i{
+  padding: 5px;
+}
+
+
+.modal-dialog {
+  z-index: 1050;
+  width: 600px;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#del-mod{
+  width: 502px;
+  height: 202px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: 100px;
+}
+h3{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-del{
+  margin: 40px auto;
+  text-align: center;
+}

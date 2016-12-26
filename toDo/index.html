@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css.css">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1>ToDo List A-level Ukraine</h1>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+			<button type="button" id="deleteAll" data-loading-text="Loading..." data-toggle="modal" class="btn btn-danger pull-right m-b-20 m-l-20" autocomplete="off"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete all</button>
+				<button type="button" id="myButton" data-loading-text="Loading..." data-toggle="modal" data-target="#myModal" class="btn btn-primary pull-right m-b-20" autocomplete="off"><i class="fa fa-plus"></i> Add new task</button>
+			</div>
+			<div>
+				
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#undone" aria-controls="home" role="tab" data-toggle="tab">To do</a></li>
+						<li role="presentation"><a href="#inprogress" aria-controls="profile" role="tab" data-toggle="tab">In progress</a></li>
+						<li role="presentation"><a href="#done" aria-controls="messages" role="tab" data-toggle="tab">Done</a></li>
+					</ul>
+				<div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="undone">
+							<div class="list-group m-t-20"></div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="inprogress">
+							<div class="list-group m-t-20"></div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="done">
+							<div class="list-group m-t-20"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<div class="panel panel-danger m-t-20">
+						<div class="panel-heading">
+							<h3 class="panel-title">To do</h3>
+						</div>
+						<div class="panel-body">
+							Task count: <span class="badge"></span>
+						</div>
+					</div>
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3 class="panel-title">In progress</h3>
+						</div>
+						<div class="panel-body">
+							Task count: <span class="badge"></span>
+						</div>
+					</div>
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Done</h3>
+						</div>
+						<div class="panel-body">
+							Task count: <span class="badge"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+				</div>
+
+				
+
+				<div class="modal-body">
+					<form id="form-new-task">
+						<div class="form-group">
+							<input type="text" name="title" autofocus="true" class="form-control" placeholder="title" />
+						</div>
+<fieldset>
+						<div class="btn-group m-b-20 center-radio" data-toggle="buttons">
+						  <label class="btn btn-primary active">
+						    <input type="radio" name="options" id="option1" autocomplete="off" checked>To do
+						  </label>
+						  <label class="btn btn-primary">
+						    <input type="radio" name="options" id="option2" autocomplete="off">In progress
+						  </label>
+						  <label class="btn btn-primary">
+						    <input type="radio" name="options" id="option3" autocomplete="off">Done
+						  </label>
+						</div>
+</fieldset>
+						<div class="form-group">
+							<textarea name="description" class="form-control" placeholder="description" cols="30" rows="10"></textarea>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary" id="save-task-btn">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="js.js"></script>
+</body>
+
+</html>

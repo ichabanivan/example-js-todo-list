@@ -1,0 +1,24 @@
+.m-b-20{
+  margin-bottom: 20px;
+}
+.m-t-20{
+  margin-top: 20px;
+}
+.m-l-20{
+  margin-left: 20px;
+}
+
+.center-radio{
+
+}
+
+.delete.fa{
+    float: right;
+    padding: 5px;
+}
+.delete.fa:hover {
+    color: red;
+}
+.label-info {
+    margin: 20px;
+}
